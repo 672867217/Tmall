@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%= require('html-loader!./layout/head-common.html')%>
+        <title>
+            <%= htmlWebpackPlugin.options.title %> - TMailStore电商平台</title>
+</head>
+
+<body>
+    <%= require('html-loader!./layout/nav.html')%>
+        <%= require('html-loader!./layout/header.html')%>
+            <div class="banner-con">
+                <!-- 在这里放轮播图的HTML结构 -->
+            </div>
+            <div class="fenlei">
+                <img src="<%= require('../image/icon/fenlei.png') %>" alt="">
+                <p>商品分类</p>
+            </div>
+            <div class="title">
+                <a href="https://chaoshi.tmall.com/?spm=875.7931836/B.2016004.1.79924265a9TpwM&acm=lb-zebra-148799-667861.1003.4.2429983&scm=1003.4.lb-zebra-148799-667861.OTHER_14561837688591_2429983"><img src="<%= require('../image/icon/tianmaochaoshi.png') %>" alt=""></a>
+                <a href="https://www.tmall.hk/?spm=875.7931836/B.2016004.2.79924265a9TpwM&acm=lb-zebra-148799-667861.1003.4.2429983&scm=1003.4.lb-zebra-148799-667861.OTHER_14561833841102_2429983"><img src="<%= require('../image/icon/tianmaoguoji.png') %>" alt=""></a>
+                <a href="https://vip.tmall.com/vip/index.htm?spm=875.7931836/B.2016004.3.79924265a9TpwM&acm=lb-zebra-148799-667861.1003.4.2429983&scm=1003.4.lb-zebra-148799-667861.OTHER_14561845383563_2429983" class="link">天猫会员</a>
+                <a href="https://3c.tmall.com/?spm=875.7931836/B.2016004.4.79924265a9TpwM&acm=lb-zebra-148799-667861.1003.4.2429983&scm=1003.4.lb-zebra-148799-667861.OTHER_14561822298635_2429983" class="link">电器城</a>
+                <a href="https://miao.tmall.com/?spm=875.7931836/B.2016004.5.79924265a9TpwM&acm=lb-zebra-148799-667861.1003.4.2429983&scm=1003.4.lb-zebra-148799-667861.OTHER_14561818451146_2429983" class="link">喵鲜生</a>
+                <a href="https://yao.tmall.com/?spm=875.7931836/B.2016004.6.79924265a9TpwM&acm=lb-zebra-148799-667861.1003.4.2429983&scm=1003.4.lb-zebra-148799-667861.OTHER_14561829993617_2429983" class="link">医药馆</a>
+                <a href="https://wt.tmall.com/?spm=875.7931836/B.2016004.7.79924265a9TpwM&acm=lb-zebra-148799-667861.1003.4.2429983&scm=1003.4.lb-zebra-148799-667861.OTHER_14561826146128_2429983" class="link">营业厅</a>
+                <a href="https://www.tmall.com/wow/mlh/act/timei?spm=875.7931836/B.2016004.8.79924265a9TpwM&acm=lb-zebra-148799-667861.1003.4.2429983&scm=1003.4.lb-zebra-148799-667861.OTHER_14561806908679_2429983" class="link">魅力惠</a>
+                <a href="https://www.tmall.com/wow/mlh/act/timei?spm=875.7931836/B.2016004.8.79924265a9TpwM&acm=lb-zebra-148799-667861.1003.4.2429983&scm=1003.4.lb-zebra-148799-667861.OTHER_14561806908679_2429983" class="link">飞猪旅行</a>
+            </div>
+            <ul class="keywords-list">
+                <li class="keywords-item">
+                    <img src="<%= require('../image/icon/phone.png') %>" alt="">
+                    <a href="./list.html?keyword=手机" class="link" target="_blank">手机</a>
+                    <a href="./list.html?keyword=数码" class="link" target="_blank">数码</a>
+                </li>
+                <li class="keywords-item">
+                    <img src="<%= require('../image/icon/diannao.png') %>" alt="">
+                    <a href="./list.html?keyword=电脑" class="link" target="_blank">电脑</a>
+                    <a href="./list.html?keyword=办公配件" class="link" target="_blank">办公配件</a>
+                </li>
+                <li class="keywords-item">
+                    <img src="<%= require('../image/icon/dianshi.png') %>" alt="">
+                    <a href="./list.html?keyword=电视" class="link" target="_blank">电视</a>
+                    <a href="./list.html?keyword=空调" class="link" target="_blank">空调</a>
+                </li>
+                <li class="keywords-item">
+                    <img src="<%= require('../image/icon/binxiang.png') %>" alt="">
+                    <a href="./list.html?keyword=冰箱" class="link" target="_blank">冰箱</a>
+                    <a href="./list.html?keyword=洗衣机" class="link" target="_blank">洗衣机</a>
+                </li>
+                <li class="keywords-item">
+                    <img src="<%= require('../image/icon/jiadian.png') %>" alt="">
+                    <a href="./list.html?keyword=厨卫家电" class="link" target="_blank">厨卫家电</a>
+                    <a href="./list.html?keyword=小家电" class="link" target="_blank">小家电</a>
+                </li>
+                <li class="keywords-item">
+                    <img src="<%= require('../image/icon/jiaju.png') %>" alt="">
+                    <a href="./list.html?keyword=家具" class="link" target="_blank">家具</a>
+                    <a href="./list.html?keyword=家居" class="link" target="_blank">家居</a>
+                </li>
+                <li class="keywords-item">
+                    <img src="<%= require('../image/icon/huazhuanpin.png') %>" alt="">
+                    <a href="./list.html?keyword=个护化妆" class="link" target="_blank">个护化妆</a>
+                    <a href="./list.html?keyword=清洁用品" class="link" target="_blank">清洁用品</a>
+                    <a href="./list.html?keyword=纸品" class="link" target="_blank">纸品</a>
+                </li>
+                <li class="keywords-item">
+                    <img src="<%= require('../image/icon/muyin.png') %>" alt="">
+                    <a href="./list.html?keyword=母婴用品" class="link" target="_blank">母婴用品</a>
+                    <a href="./list.html?keyword=儿童玩具" class="link" target="_blank">儿童玩具</a>
+                    <a href="./list.html?keyword=童装童鞋" class="link" target="_blank">童装童鞋</a>
+                </li>
+                <li class="keywords-item">
+                    <img src="<%= require('../image/icon/xiexue.png') %>" alt="">
+                    <a href="./list.html?keyword=鞋靴" class="link" target="_blank">鞋靴</a>
+                    <a href="./list.html?keyword=钟表" class="link" target="_blank">钟表</a>
+                    <a href="./list.html?keyword=箱包" class="link" target="_blank">箱包</a>
+                    <a href="./list.html?keyword=珠宝" class="link" target="_blank">珠宝</a>
+                </li>
+                <li class="keywords-item">
+                    <img src="<%= require('../image/icon/yiyao.png') %>" alt="">
+                    <a href="./list.html?keyword=医药保健" class="link" target="_blank">医药保健</a>
+                </li>
+            </ul>
+            <div class="w">
+                <div class="shangou">
+                    <div class="s-title">
+                        <span>品牌闪购 BRAND SALE</span>
+                        <a href="" class="link"><img src="<%= require('../image/icon/jiantou.png') %>" alt=""></a>
+
+                    </div>
+                    <div class="img">
+                        <img src="<%= require('../image/icon/shangou.jpg') %>" alt="">
+                    </div>
+                </div>
+                <div class="jumingpin">
+                    <div class="s-title">
+                        <span>聚名品 LUXURY CHANNEL</span>
+                        <a href="" class="link"><span>更多</span><img src="<%= require('../image/icon/jiantou.png') %>" alt=""></a>
+
+                    </div>
+                    <div class="img">
+                        <img src="<%= require('../image/icon/jumingpin.jpg') %>" alt="">
+                    </div>
+                </div>
+                <div class="huodon">
+                    <div class="s-title">
+                        <span>品牌活动 BRAND ACTIVTY</span>
+                        <a href="" class="link"><span>更多</span><img src="<%= require('../image/icon/jiantou.png') %>" alt=""></a>
+
+                    </div>
+                    <div class="img">
+                        <img src="<%= require('../image/icon/huodon.jpg') %>" alt="">
+                    </div>
+                </div>
+                <div class="brand">
+                    <ul class="brand-content">
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/meidi.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">Midea/美的</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/oulaiya.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">L`oreal/欧莱雅</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/shimisi.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">A.O.Smith/史密斯</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/yingtao.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">CHERRY</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/haier.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">Haier/海尔</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/haidaochuan.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">美商海盗船</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/vans.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">VANS</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/waixingren.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">alienware</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/xiaomi.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">小米</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/suoni.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">SONY/索尼</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/kuangwei.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">CONVERSE</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/sanxing.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">SAMSUNG/三星</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/shu.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">shu uemura</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/phi.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">PHILIPS</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/puma.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">Puma/彪马</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/nake.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">耐克</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/supor.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">SUPOR</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/toto.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">TOTO</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/laneige.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">LANEIGE</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/como.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">como tomo</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/renhe.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">仁和</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/be.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">belulu</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/shinaide.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">Schneuder/施耐德电气</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="brand-item">
+                            <img src="<%= require('../image/icon/meizanchen.png') %>" alt="">
+                            <a class="item" href="">
+                                <div>
+                                    <span class="text">美赞臣</span>
+                                    <br>
+                                    <span class="button">点击进入</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ============== -->
+            <div class="w">
+                <!-- ====== -->
+                <div class="floor-wrap">
+                    <h1 class="floor-title">F1 家用电器</h1>
+                    <ul class="floor-list">
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100006">
+                                <span class="floor-text">双开门冰箱</span>
+                                <img src="<%= require('../image/floor/floor1-1.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100007">
+                                <span class="floor-text">电视</span>
+                                <img src="<%= require('../image/floor/floor1-2.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100008">
+                                <span class="floor-text">洗衣机</span>
+                                <img src="<%= require('../image/floor/floor1-3.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100009">
+                                <span class="floor-text">空调</span>
+                                <img src="<%= require('../image/floor/floor1-4.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100010">
+                                <span class="floor-text">热水器</span>
+                                <img src="<%= require('../image/floor/floor1-5.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ======== -->
+                <div class="floor-wrap">
+                    <h1 class="floor-title">F2 手机数码</h1>
+                    <ul class="floor-list">
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100011">
+                                <span class="floor-text">双开门冰箱</span>
+                                <img src="<%= require('../image/floor/floor2-1.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100012">
+                                <span class="floor-text">电视</span>
+                                <img src="<%= require('../image/floor/floor2-2.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100013">
+                                <span class="floor-text">洗衣机</span>
+                                <img src="<%= require('../image/floor/floor2-3.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100014">
+                                <span class="floor-text">空调</span>
+                                <img src="<%= require('../image/floor/floor2-4.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100015">
+                                <span class="floor-text">热水器</span>
+                                <img src="<%= require('../image/floor/floor2-5.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ======== -->
+                <div class="floor-wrap">
+                    <h1 class="floor-title">F3 衣服箱包</h1>
+                    <ul class="floor-list">
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100016">
+                                <span class="floor-text">双开门冰箱</span>
+                                <img src="<%= require('../image/floor/floor3-1.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100017">
+                                <span class="floor-text">电视</span>
+                                <img src="<%= require('../image/floor/floor3-2.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100018">
+                                <span class="floor-text">洗衣机</span>
+                                <img src="<%= require('../image/floor/floor3-3.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100019">
+                                <span class="floor-text">空调</span>
+                                <img src="<%= require('../image/floor/floor3-4.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100020">
+                                <span class="floor-text">热水器</span>
+                                <img src="<%= require('../image/floor/floor3-5.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ======== -->
+                <div class="floor-wrap">
+                    <h1 class="floor-title">F4 小吃零食</h1>
+                    <ul class="floor-list">
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100021">
+                                <span class="floor-text">双开门冰箱</span>
+                                <img src="<%= require('../image/floor/floor4-1.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100022">
+                                <span class="floor-text">电视</span>
+                                <img src="<%= require('../image/floor/floor4-2.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100023">
+                                <span class="floor-text">洗衣机</span>
+                                <img src="<%= require('../image/floor/floor4-3.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100024">
+                                <span class="floor-text">空调</span>
+                                <img src="<%= require('../image/floor/floor4-4.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100025">
+                                <span class="floor-text">热水器</span>
+                                <img src="<%= require('../image/floor/floor4-5.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ======== -->
+                <div class="floor-wrap">
+                    <h1 class="floor-title">F5 酒水饮料</h1>
+                    <ul class="floor-list">
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100026">
+                                <span class="floor-text">双开门冰箱</span>
+                                <img src="<%= require('../image/floor/floor5-1.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100027">
+                                <span class="floor-text">电视</span>
+                                <img src="<%= require('../image/floor/floor5-2.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100028">
+                                <span class="floor-text">洗衣机</span>
+                                <img src="<%= require('../image/floor/floor5-3.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100029">
+                                <span class="floor-text">空调</span>
+                                <img src="<%= require('../image/floor/floor5-4.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                        <!-- ====== -->
+                        <li class="floor-item">
+                            <a href="./list.html?categoryId=100030">
+                                <span class="floor-text">热水器</span>
+                                <img src="<%= require('../image/floor/floor5-5.jpg') %>" alt="双开门冰箱" class="floor-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ======== -->
+            </div>
+            <!-- ============== -->
+            <%= require('html-loader!./layout/footer.html')%>
+</body>
+
+</html>

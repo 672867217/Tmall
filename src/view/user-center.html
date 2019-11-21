@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<%= require('html-loader!./layout/head-common.html')%>
+  	<title><%= htmlWebpackPlugin.options.title %> - TMailStore电商平台</title>
+  </head>
+  <body>
+    <%= require('html-loader!./layout/nav.html')%>
+  	<%= require('html-loader!./layout/header.html')%>
+    <!-- div.crumb>div.w>div.crumb-con -->
+    <div class="crumb">
+      <div class="w">
+        <div class="crumb-con">
+          <a href="./index.html" class="link">TMALL > </a>
+          <span></span>
+          <span class="link-text"><%= htmlWebpackPlugin.options.title %></span>
+        </div>
+      </div>
+    </div>
+    <!-- ============ -->
+    <div class="page-wrap w">
+      <%= require('html-loader!./layout/nav-side.html')%>
+      <div class="content with-nav">
+        <div class="panel">
+          <div class="panel-title">个人中心</div>
+          <div class="panel-body">
+            <div class="loading"></div>
+            <!-- 在这里写动态HTML结构 -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= require('html-loader!./layout/footer.html')%>
+  </body>
+</html>

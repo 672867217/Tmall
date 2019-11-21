@@ -1,0 +1,36 @@
+{
+    "name": "flm-demo2",
+    "version": "1.0.0",
+    "description": "哈哈哈哈哈",
+    "main": "index.js",
+    "scripts": {
+        "dev": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
+        "dist_win": "set WEBPACK_ENV=online && webpack -p"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/672867217/flm-demo2.git"
+    },
+    "author": "flm",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/672867217/flm-demo2/issues"
+    },
+    "homepage": "https://github.com/672867217/flm-demo2#readme",
+    "devDependencies": {
+        "css-loader": "^3.2.0",
+        "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "file-loader": "^4.2.0",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.2.0",
+        "style-loader": "^1.0.0",
+        "url-loader": "^2.1.0",
+        "webpack": "^4.39.3",
+        "webpack-cli": "^3.3.8",
+        "webpack-dev-server": "^3.8.0"
+    },
+    "dependencies": {
+        "font-awesome": "^4.7.0",
+        "hogan.js": "^3.0.2"
+    }
+}

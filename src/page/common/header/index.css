@@ -1,0 +1,56 @@
+.header .logo {
+    /*绝对定位的特征：不占文档流；相对定位的特征：占文档流*/
+    position: absolute;
+    left: 60px;
+    top: 34px;
+    width: 240px;
+    height: 130px;
+    /*显示成块级元素：独立占一行*/
+    display: block;
+    font-size: 36px;
+    color: #C60023;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header .logo img {
+    height: 130px;
+    position: relative;
+    left: -59px;
+    top: -50px;
+}
+
+.header .search-con {
+    /*上---右---下---左*/
+    padding: 40px 0 30px 250px;
+}
+
+.header .search-con .search-input {
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: 2px solid #C60023;
+    /*去掉蓝色外边框*/
+    outline: none;
+}
+
+.header .search-con .search-btn {
+    position: absolute;
+    height: 44px;
+    width: 80px;
+}
+
+
+/*面包屑导航*/
+
+.crumb {
+    margin-bottom: 15px;
+    height: 50px;
+    line-height: 50px;
+    background: #EEE;
+    color: #888;
+    font-size: 14px;
+    border-top: 2px solid #c60023;
+}

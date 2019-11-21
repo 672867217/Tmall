@@ -1,0 +1,24 @@
+<!-- div.user-info>div.form-line*5>span.label{用户名:}*2 -->
+<div class="user-info">
+  <div class="form-line">
+    <span class="label">用户名:</span>
+    <span class="label">{{ username }}</span>
+  </div>
+  <div class="form-line">
+    <span class="label">电话:</span>
+    <span class="label">{{ phone }}</span>
+  </div>
+  <div class="form-line">
+    <span class="label">邮箱:</span>
+    <span class="label">{{ email }}</span>
+  </div>
+  <div class="form-line">
+    <span class="label">问题:</span>
+    <span class="label">{{ question }}</span>
+  </div>
+  <div class="form-line">
+    <span class="label">答案:</span>
+    <span class="label">{{ answer }}</span>
+  </div>
+  <a href="./user-center-update.html" class="btn btn-submit">编辑</a>
+</div>

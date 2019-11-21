@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%= require('html-loader!./layout/head-common.html')%>
+        <title>
+            <%= htmlWebpackPlugin.options.title %> - TMailStore电商平台</title>
+</head>
+
+<body>
+    <%= require('html-loader!./layout/nav-simple.html')%>
+        <div class="page-wrap">
+            <div class="w">
+                <div class="ks-dialog" id='J_AgreementDialog'>
+                    <div class="ks-dialog-content">
+
+                        <div class='ks-dialog-header'>
+
+                            <span class="title">注册协议</span>
+
+                        </div>
+                        <a class="link" role="button" href="index.html">
+                            <span class="fa fa-close"></span>
+                        </a>
+                        <div class='ks-dialog-body'>
+
+                            <p><strong>【审慎阅读】</strong>您在申请注册流程中点击同意前，应当认真阅读以下协议。<strong style='text-decoration: underline'>请您务必审慎阅读、充分理解协议中相关条款内容，其中包括：</strong></p>
+                            <br>
+                            <p>1、<strong style='text-decoration: underline'>与您约定免除或限制责任的条款；</strong></p>
+                            <br>
+                            <p>2、<strong style='text-decoration: underline'>与您约定法律适用和管辖的条款；</strong></p>
+                            <br>
+                            <p>3、<strong style='text-decoration: underline'>其他以粗体下划线标识的重要条款。</strong></p>
+                            <br>
+                            <p>如您对协议有任何疑问，可向平台客服咨询。</p>
+                            <br>
+                            <p><strong>【特别提示】</strong>当您按照注册页面提示填写信息、阅读并同意协议且完成全部注册程序后，即表示您已充分阅读、理解并接受协议的全部内容。如您因平台服务与淘宝发生争议的，适用《淘宝平台服务协议》处理。如您在使用平台服务过程中与其他用户发生争议的，依您与其他用户达成的协议处理。</p>
+                            <br>
+                            <p><strong style='text-decoration: underline'>阅读协议的过程中，如果您不同意相关协议或其中任何条款约定，您应立即停止注册程序。</strong></p>
+                            <br>
+
+
+
+
+                            <p><a class="link" href='http://terms.alicdn.com/legal-agreement/terms/TD/TD201609301342_19559.html' target='_blank'>淘宝平台服务协议</a></p>
+
+                            <p><a class="link" href='http://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html' target='_blank'>隐私权政策</a></p>
+
+                            <p><a class="link" href='https://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201811121436_80276.html' target='_blank'>法律声明</a></p>
+
+                            <p><a class="link" href='https://render.alipay.com/p/f/fd-jm7jym6r/alipay/multi-agreement.html' target='_blank'>支付宝及客户端服务协议</a></p>
+
+
+
+                            <p style='text-align: center'>
+
+                                <button class='btn btn-large' type='button' id='J_AgreementBtn'>同意协议</button>
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ============ -->
+                <div class="user-con hide">
+                    <div class="user-title">用户注册</div>
+                    <div class="user-box">
+                        <!-- ============ -->
+                        <div class="error-item">
+                            <i class="fa fa-minus-circle error-icon"></i>
+                            <p class="err-msg">Error</p>
+                        </div>
+                        <!-- ============ -->
+                        <div class="user-item">
+                            <!-- for属性目的是当点到label的时候会直接聚焦到相应的输入框 -->
+                            <label for="username" class="user-label">
+							<i class="fa fa-user"></i>
+						</label>
+                            <input type="text" class="user-content" id="username" placeholder="请输入用户名" autocomplete="off" required>
+                        </div>
+                        <!-- ============= -->
+                        <div class="user-item">
+                            <!-- for属性目的是当点到label的时候会直接聚焦到相应的输入框 -->
+                            <label for="password" class="user-label">
+							<i class="fa fa-lock"></i>
+						</label>
+                            <input type="password" class="user-content" id="password" placeholder="请输入密码" autocomplete="off" required>
+                        </div>
+                        <!-- ============= -->
+                        <div class="user-item">
+                            <!-- for属性目的是当点到label的时候会直接聚焦到相应的输入框 -->
+                            <label for="password" class="user-label">
+							<i class="fa fa-lock"></i>
+						</label>
+                            <input type="password" class="user-content" id="password-confirm" placeholder="请再次输入密码" autocomplete="off" required>
+                        </div>
+                        <!-- ============= -->
+                        <div class="user-item">
+                            <!-- for属性目的是当点到label的时候会直接聚焦到相应的输入框 -->
+                            <label for="password" class="user-label">
+							<i class="fa fa-phone"></i>
+						</label>
+                            <input type="number" class="user-content" id="phone" placeholder="请输入手机号" autocomplete="off" required>
+                        </div>
+                        <!-- ============= -->
+                        <div class="user-item">
+                            <!-- for属性目的是当点到label的时候会直接聚焦到相应的输入框 -->
+                            <label for="text" class="user-label">
+							<i class="fa fa-envelope"></i>
+						</label>
+                            <input type="text" class="user-content" id="email" placeholder="请输入邮箱地址" autocomplete="off" required>
+                        </div>
+                        <!-- ============= -->
+                        <div class="user-item">
+                            <!-- for属性目的是当点到label的时候会直接聚焦到相应的输入框 -->
+                            <label for="password" class="user-label">
+							<i class="fa fa-question"></i>
+						</label>
+                            <input type="text" class="user-content" id="question" placeholder="请输入密码提示问题" autocomplete="off" required>
+                        </div>
+                        <!-- ============= -->
+                        <div class="user-item">
+                            <!-- for属性目的是当点到label的时候会直接聚焦到相应的输入框 -->
+                            <label for="password" class="user-label">
+							<i class="fa fa-key"></i>
+						</label>
+                            <input type="text" class="user-content" id="answer" placeholder="请输入密码提示问题答案" autocomplete="off" required>
+                        </div>
+                        <!-- ============== -->
+                        <a class="btn btn-submit" id="submit">立即注册</a>
+                        <!-- =========== -->
+                        <div class="link-item">
+                            <a href="./user-login.html" class="link" target="_blank">已有账号，去登录>></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============= -->
+            </div>
+        </div>
+        <%= require('html-loader!./layout/footer.html')%>
+</body>
+
+</html>

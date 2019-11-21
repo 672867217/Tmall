@@ -1,0 +1,20 @@
+.nav-simple {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+
+.nav-simple .w {
+    height: 60px;
+}
+
+.nav-simple .logo {
+    height: 60px;
+    position: relative;
+    top: 15px;
+}
+
+.nav-simple .logo img {
+    width: 190px;
+}
